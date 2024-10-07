@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-kling-api-2lab"
+description = "Unofficial implementation of kwai's kling for ComfyUI"
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/AI2lab/comfyUI-kling-api-2lab"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "ai2lab"
+DisplayName = "comfyUI-kling-api-2lab"
+Icon = ""
