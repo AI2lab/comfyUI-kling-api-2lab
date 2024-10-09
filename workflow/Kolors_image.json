@@ -1,0 +1,121 @@
+{
+  "last_node_id": 8,
+  "last_link_id": 5,
+  "nodes": [
+    {
+      "id": 8,
+      "type": "SaveImageByUrl (2lab)",
+      "pos": [
+        829,
+        151
+      ],
+      "size": [
+        315,
+        270
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_urls",
+          "type": "LIST",
+          "link": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImageByUrl (2lab)"
+      },
+      "widgets_values": [
+        "2lab/img"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "Kolors_image (2lab)",
+      "pos": [
+        381,
+        152
+      ],
+      "size": {
+        "0": 400,
+        "1": 246
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "image_urls",
+          "type": "LIST",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Kolors_image (2lab)"
+      },
+      "widgets_values": [
+        "kling-v1",
+        "一只凶猛的老虎在森林里",
+        "",
+        "1:1",
+        1,
+        "",
+        0.5
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        120,
+        150
+      ],
+      "size": {
+        "0": 210,
+        "1": 161.34375
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "目前只支持可灵1.0\n\n本工作流支持文生图和图生图\n\nref_image_path: 参考图绝对路径\nimage_fidelity: 参考图的参考强度,取值范围：[0,1]，数值越大参考强度越大"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      5,
+      7,
+      0,
+      8,
+      0,
+      "LIST"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -35.66796875,
+        5.359375
+      ]
+    }
+  },
+  "version": 0.4
+}

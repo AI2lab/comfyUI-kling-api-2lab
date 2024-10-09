@@ -1,0 +1,121 @@
+{
+  "last_node_id": 6,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        120,
+        150
+      ],
+      "size": [
+        210,
+        161.34375
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "目前只支持可灵1.0\n\nmode 画质\n- std: 标准\n- pro: 高品质\n\nduration 时长：5秒或10秒"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 5,
+      "type": "Kling_text2video (2lab)",
+      "pos": [
+        360,
+        150
+      ],
+      "size": [
+        405.98828125,
+        323.29296875
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Kling_text2video (2lab)"
+      },
+      "widgets_values": [
+        "kling-v1",
+        "一位年轻的中国女研究员，戴眼镜，长发，单肩包，从办公楼走出来，微笑",
+        "",
+        0.5,
+        "std",
+        "1:1",
+        5
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 2,
+      "type": "SaveVideoByUrl (2lab)",
+      "pos": [
+        810,
+        150
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "link": 4
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideoByUrl (2lab)"
+      },
+      "widgets_values": [
+        "2lab/video"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    }
+  ],
+  "links": [
+    [
+      4,
+      5,
+      0,
+      2,
+      0,
+      "LIST"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -35.66796875,
+        5.359375
+      ]
+    }
+  },
+  "version": 0.4
+}

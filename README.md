@@ -9,3 +9,4 @@ Unofficial implementation of KLing for ComfyUI
 # example
 see workflow folder
 custom node "comfyUI-tool-2lab" is needed for example workflows
+

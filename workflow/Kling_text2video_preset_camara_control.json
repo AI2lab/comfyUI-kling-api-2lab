@@ -1,0 +1,122 @@
+{
+  "last_node_id": 7,
+  "last_link_id": 5,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "SaveVideoByUrl (2lab)",
+      "pos": [
+        901,
+        148
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "link": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideoByUrl (2lab)"
+      },
+      "widgets_values": [
+        "2lab/video"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "Kling_text2video_preset_camara_control (2lab)",
+      "pos": [
+        447,
+        151
+      ],
+      "size": {
+        "0": 400,
+        "1": 270
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Kling_text2video_preset_camara_control (2lab)"
+      },
+      "widgets_values": [
+        "kling-v1",
+        "一位年轻的中国女研究员，戴眼镜，长发，单肩包，从办公楼走出来，微笑",
+        "",
+        0.5,
+        "std",
+        "1:1",
+        5,
+        "down_back"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        120,
+        150
+      ],
+      "size": [
+        287.31640625,
+        226.453125
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "目前只支持可灵1.0\n\nmode 画质\n- std: 标准\n- pro: 高品质\n\nduration 时长：5秒或10秒\n\ncamara_control_type 大师运镜模式：\n- down_back 镜头下压并后退 ➡️ 下移拉远\n- forward_up 镜头前进并上仰 ➡️ 推进上移\n- right_turn_forward 先右旋转后前进 ➡️ 右旋推进\n- left_turn_forward 先左旋并前进 ➡️ 左旋推进"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      5,
+      7,
+      0,
+      2,
+      0,
+      "LIST"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}

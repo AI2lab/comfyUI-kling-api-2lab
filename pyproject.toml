@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-kling-api-2lab"
 description = "Unofficial implementation of kwai's kling for ComfyUI"
-version = "1.0.0"
+version = "1.1.0"
 license = { file = "LICENSE" }
 dependencies = []
 

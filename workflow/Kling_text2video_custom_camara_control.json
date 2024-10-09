@@ -1,0 +1,124 @@
+{
+  "last_node_id": 8,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "SaveVideoByUrl (2lab)",
+      "pos": [
+        901,
+        148
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "link": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideoByUrl (2lab)"
+      },
+      "widgets_values": [
+        "2lab/video"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 8,
+      "type": "Kling_text2video_custom_camara_control (2lab)",
+      "pos": [
+        463,
+        154
+      ],
+      "size": {
+        "0": 400,
+        "1": 318
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Kling_text2video_custom_camara_control (2lab)"
+      },
+      "widgets_values": [
+        "kling-v1",
+        "一位年轻的中国女研究员，戴眼镜，长发，单肩包，从办公楼走出来，微笑",
+        "",
+        0.5,
+        "std",
+        "1:1",
+        5,
+        "simple",
+        "horizontal",
+        0
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        26,
+        159
+      ],
+      "size": [
+        402.875,
+        318.77734375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "目前只支持可灵1.0\n\nmode 画质\n- std: 标准\n- pro: 高品质\n\nduration 时长：5秒或10秒\n\ncamara_control_direction & range 简单运镜方向和幅度：\n- horizontal 水平运镜，负值表示向左平移，正值表示向右平移\n- vertical 垂直运镜，负值表示向下平移，正值表示向上平移\n- pan 水平摇镜，负值表示绕y轴向左旋转，正值表示绕y轴向右旋转\n- tilt 垂直摇镜，负值表示绕x轴向下旋转，正值表示绕x轴向上旋转\n- roll 旋转运镜，负值表示绕z轴逆时针旋转，正值表示绕z轴顺时针旋转\n- zoom 变焦，控制摄像机的焦距变化，负值表示焦距变长、视野范围变小，正值表示焦距变短、视野范围变大\n\ncamara_control_range的取值范围都是 [-10, 10]"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      6,
+      8,
+      0,
+      2,
+      0,
+      "LIST"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}

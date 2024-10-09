@@ -1,0 +1,121 @@
+{
+  "last_node_id": 5,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "SaveVideoByUrl (2lab)",
+      "pos": [
+        878,
+        153
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "link": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideoByUrl (2lab)"
+      },
+      "widgets_values": [
+        "2lab/video"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "Kling_image2video (2lab)",
+      "pos": [
+        429,
+        155
+      ],
+      "size": {
+        "0": 400,
+        "1": 270
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "video_urls",
+          "type": "LIST",
+          "links": [
+            3
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Kling_image2video (2lab)"
+      },
+      "widgets_values": [
+        "kling-v1",
+        "/Users/xxx/tryOn/human.png",
+        "a smiling girl,",
+        "",
+        0.5,
+        "std",
+        5,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [
+        109,
+        161
+      ],
+      "size": [
+        278.30859375,
+        164.296875
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "目前只支持可灵1.0\n\nref_image_path: 参考图的绝对路径\nref_tail_image_path: 尾帧参考图的绝对路径\n\nmode 画质\n- std: 标准\n- pro: 高品质\n\nduration 时长：5秒或10秒"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      3,
+      4,
+      0,
+      2,
+      0,
+      "LIST"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -35.66796875,
+        5.359375
+      ]
+    }
+  },
+  "version": 0.4
+}
